@@ -9,8 +9,8 @@ on:
           type: string
       outputs:
         result:
-          description: The result of the deployment
-          value: ${{ jobs.deploy }}
+          description: The result of the deployment operation
+          value: ${{ jobs.deploy.outputs }}
 jobs:
     deploy:
         outputs:
